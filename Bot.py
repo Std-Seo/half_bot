@@ -47,15 +47,6 @@ async def 내정보(ctx):
     await ctx.channel.send(f"{ctx.author.mention}님은 {date.year}년 {date.month}월 {date.day}일에 가입하셨어요!")
     await ctx.channel.send(f"{ctx.author.mention}님의 멋진 아바타 사진! {user.avatar_url}")
 
-# 하프 정보
-# @bot.command()
-# async def 가입정보(ctx):
-#     user = discord.abc.User()
-#     date = datetime.datetime.utcfromtimestamp(((int(user.id) >> 22) + 1420070400000) / 1000)
-#     await ctx.channel.send(f"{user}님의 정보!")
-#     await ctx.channel.send(f"{user}님은 {date.year}년 {date.month}월 {date.day}일에 가입하셨어요!")
-#     await ctx.channel.send(f"{user}님의 멋진 아바타 사진! {user.avatar_url}")
-
 @bot.command()
 async def 랜덤(ctx):
     await ctx.channel.send(f"짜잔! {random.randint(1, 10)}!")
