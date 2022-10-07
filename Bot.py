@@ -25,11 +25,8 @@ async def 도움말(ctx):
     embed.add_field(name = '?내정보 :mens:', value = '명령어를 쓰신 분의 정보를 알려드려요!')
     embed.add_field(name = '?도움말 :question:', value = '하프가 할 수 있는 것들을 보여줘요!')
     embed.add_field(name = '?랜덤 :keycap_ten:', value = '1부터 10까지의 수에서 랜덤으로 하나를 출력해요!')
-    embed.add_field(name = '?채널공지 :loudspeaker:', value = '채널 공지를 보여줘요!')
-    embed.add_field(name = '?Embed :capital_abcd:', value = '영문 임베드를 출력해요!')
-    embed.add_field(name = '안녕, 핑, 귀엽다, ping :speech_balloon:', value = '대답해드릴게요!')
     embed.add_field(name = '10초 타이머 :clock1:', value = '10초를 센 뒤 불러드려요!')
-    embed.add_field(name = '하프정보 :heart:', value = '제 정보를 알려드릴게요!')
+    embed.add_field(name = '?하프정보 :heart:', value = '제 정보를 알려드릴게요!')
     await ctx.channel.send(embed = embed)
 
 @bot.command()
